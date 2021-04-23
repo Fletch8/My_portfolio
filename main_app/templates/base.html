@@ -18,40 +18,28 @@
     <nav>
       <div class="nav-wrapper">  
         <ul>
-          <li><a href="/cats/" class="left brand-logo ">&nbsp;&nbsp;CatCollector</a></li>
+          <li><a href="/cats/" class="left brand-logo ">&nbsp;&nbsp;Fletcher Stamps</a></li>
         </ul>
         <a href='#' class='right sidenav-trigger' data-target="mobile-demo"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="{% url 'about' %}">About</a></li>
-          {% if user.is_authenticated %}
-            <li><a href="{% url 'cats_create' %}">Add a Cat</a></li>
-            <li><a href="{% url 'cats' %}">View All My Cats</a></li>
-            <li><a href="{% url 'logout' %}">Log out</a></li>
-          {% else %}
-            <li><a href="{% url 'login' %}">Log in</a></li>
-            <li><a href="{% url 'sign_up' %}">Sign up</a></li>
-          {% endif %}
+          <li><a href="{% url 'about' %}">About</a></li>       
+          <li><a href="{% url 'projects' %}">Projects</a></li>
+          <li><a href="{% url 'skills' %}">Skills</a></li>          
         </ul>
       </div>
     </nav>
   </header>  
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="{% url 'about' %}">About</a></li>
-    {% if user.is_authenticated %}
-    <li><a href="{% url 'cats_create' %}">Add a Cat</a></li>
-    <li><a href="{% url 'cats' %}">View All My Cats</a></li>
-    <li><a href="{% url 'logout' %}">Log out</a></li>
-    {% else %}
-    <li><a href="{% url 'login' %}">Log in</a></li>
-    <li><a href="{% url 'sign_up' %}">Sign up</a></li>
-    {% endif %}
+    <li><a href="{% url 'about' %}">About</a></li>  
+    <li><a href="{% url 'projects' %}">Projects</a></li>
+    <li><a href="{% url 'skills' %}">Skills</a></li>  
   </ul>
   <main class="container">
     {% block content %}
     {% endblock %}
   </main>
   <footer class="page-footer">
-    <div class="right">All Rights Reserved, &copy; 2021 SEI-111 Cat Collector &nbsp;</div>
+    <div class="right">All Rights Reserved, &copy; 2021 Fletcher Stamps &nbsp;</div>
   </footer>
 
 </body>
