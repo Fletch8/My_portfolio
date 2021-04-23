@@ -1,11 +1,20 @@
 h1 {
-  color: tomato;
+  color: rgb(58, 92, 196);
 }
 
 a {
   color: black;
   text-decoration: none;
 }
+
+nav {
+  background-color: royalblue;
+}
+
+.page-footer {
+  background-color: royalblue;
+}
+
 nav li > a {
   color: white;
 }
@@ -26,7 +35,4 @@ body {
 
 main {
   flex: 1 0 auto;
-}
-.navbar-fixed {
-  @extend .blue;
 }
