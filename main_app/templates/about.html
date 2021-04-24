@@ -1,7 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
     <h1>A little bit about me</h1>
-    <hr>
-    <p>I’m a software engineer with a passion for developing readable and efficient code. I strive to produce scalable solutions for emerging industries. I’m motivated by the great things that can be achieved with technology and creativity. Working well with others and being open minded is second nature to me and I look forward to working on a highly collaborative team.</p>
+    <hr>    
+    <div class="row">
+        <div class="col s12 m7" style="width: 450px;">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'profile.png' %}">
+                    <span class="card-title" style='color: royalblue;'></span>
+                </div>
+                <div class="card-content">
+                    <p>
+                        I’m a software engineer with a passion for developing readable and efficient code. 
+                        I strive to produce scalable solutions for emerging industries. 
+                        I’m motivated by the great things that can be achieved with technology and creativity. 
+                        Working well with others and being open minded is second nature to me and I look forward to working on a highly collaborative team.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a style='color: royalblue;' href="https://github.com/Fletch8/" target="_blank">GitHub</a>
+                    <a style='color: royalblue' href="LinkedIn https://www.linkedin.com/in/fletcherstamps" target="_blank">LinkedIn</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
