@@ -1,7 +1,67 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
     <h1>Some of my Projects</h1>
     <hr>
+    <div class="row">
+        <div class="col s12 m7"style="width: 350px;">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'swirv.png' %}">
+                    <span class="card-title" style='color: royalblue;'>Swirv</span>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Swirv is a distributive story-telling platform, 
+                        where every reader can branch from an author's storyline to spin their own tale.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m7" style="width: 350px;">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'omni_sight_home_page.png' %}">
+                    <span class="card-title" style='color: royalblue;'>Omni Sight</span>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Omni Sight is for traders and investors interested in trading crypto-currencies. 
+                        Allows users to add and track their favorite crypto-currencies through an interactive user dashboard. 
+                        The dashboard displays users’ favorite currencies and allows users to set custom price alerts.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m7" style="width: 350px;">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'find_the_queen.png' %}">
+                    <span class="card-title" style='color: royalblue;'></span>
+                </div>
+                <div class="card-content">
+                    <p>
+                        Front end card game that will test your luck an see if you can find the queen card
+                        Card flip animations implemented with JavaScript and CSS
+                        Cards are dynamically generated with JavaScript
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
